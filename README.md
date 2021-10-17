@@ -1,29 +1,16 @@
 # DatingApp; backend
 
-
+Rewritten backend for: https://github.com/angrun/app-backend
 
 
 To run
 ---------
 
+1. Configure and verify that db is running (Download Postgres UI and run it on default port (5432)). Run application from main class (DatingAppApplication.java)
 
-To build
----------
 
-```
-gradle build -x test
-
-```
 
 **NB!** Make sure Annotation Processors are enabled (Under **Preferences** -> **Compiler** -> **Annotation Processors** -> **Enable annotation proccessing**) and Lombok plugin is installed.
-
-Make also sure these dependencies could be found in * *build.gradle* *
-
-```
-compileOnly 'org.projectlombok:lombok'
-annotationProcessor 'org.projectlombok:lombok'
-
-```
 
 
 Built with
