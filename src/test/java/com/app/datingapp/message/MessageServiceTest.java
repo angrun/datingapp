@@ -1,8 +1,6 @@
 package com.app.datingapp.message;
 
 import com.app.datingapp.TestUtils;
-import com.app.datingapp.match.MatchingDao;
-import com.app.datingapp.match.MatchingService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

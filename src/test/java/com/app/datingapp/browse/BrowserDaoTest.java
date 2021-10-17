@@ -1,17 +1,9 @@
 package com.app.datingapp.browse;
 
-import com.app.datingapp.DaoBase;
 import com.app.datingapp.TestUtils;
 import com.app.datingapp.filter.FilterDto;
-import com.app.datingapp.match.Matching;
 import com.app.datingapp.user.UserDto;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.skife.jdbi.v2.DBI;
-import org.skife.jdbi.v2.Handle;
-import org.skife.jdbi.v2.sqlobject.SqlUpdate;
-import org.skife.jdbi.v2.sqlobject.customizers.QueryTimeOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -23,7 +15,7 @@ import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.notNullValue;
 
 @SpringBootTest
-class BrowserDaoTest extends DaoBase {
+class BrowserDaoTest {
 
     @Autowired
     TestUtils testUtils;

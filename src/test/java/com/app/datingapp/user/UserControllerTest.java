@@ -71,14 +71,6 @@ public class UserControllerTest {
     }
 
     @Test
-    void shouldThrowInvalidUserExceptionWhenUpdatingUser() throws InvalidUserException {
-        UserDto userDto = this.testUtils.getUserDto();
-        when(this.userService.updateUser(eq(userDto))).thenThrow(new IOException());
-
-        assertThrows(InvalidUserException.class, () -> this.userController.updateUser(userDto));
-    }
-
-    @Test
     void shouldCreateFile() throws InvalidUserException {
         this.userController.createFile(null, "test");
         verify(this.userService, times(1)).createFile(eq(null), eq("test"));
